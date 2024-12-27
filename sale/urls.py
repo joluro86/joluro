@@ -19,6 +19,6 @@ from django.urls import path
 from sale.views import index, detail
 
 urlpatterns = [
-    path('', index ,name="index"),
+    path('', index ,name="sale_index"),
     path('detail', detail ,name="detail"),
 ]

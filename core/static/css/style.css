@@ -1,0 +1,6 @@
+.body {
+    @apply bg-gray-400 text-gray-800; /* Usando Tailwind para fondo y texto */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}

@@ -1,22 +1,25 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="{% static 'css/tailwind.css' %}" rel="stylesheet">
-    <title>{% block title %}Joluro{% endblock %}</title>
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+    <link rel="icon" href="{% static 'images/icon.png' %}">
+    <title>{% block title %}Joluro Systems{% endblock %}</title>
 </head>
-<body  class="bg-slate-50">
-    {% include 'navbar.html' %}
+
+<body class="bg-gray">
+    {% include 'core/navbar.html' %}
     <div class="content">
         {% block content %}
         <!-- El contenido específico de cada página irá aquí -->
         {% endblock %}
     </div>
-    {% include 'footer.html' %}
+    {% include 'core/footer.html' %}
     <script src="https://cdn.jsdelivr.net/npm/flowbite@1.6.5/dist/flowbite.min.js"></script>
-
 </body>
+
 </html>
